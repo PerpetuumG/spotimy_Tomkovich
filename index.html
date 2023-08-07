@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="./assets/scss/reset.css" />
     <link rel="stylesheet" href="./assets/scss/styles.css" />
-    <script defer src="./assets/js/"></script>
+    <script defer type="module" src="./assets/js/scripts.js"></script>
   </head>
   <body>
     <div class="root">
@@ -34,13 +34,13 @@
 
               <div class="volume">
                 <input
-                  type="range"
-                  name="volume"
-                  class="controls-volume"
                   min="0"
                   max="1"
                   step="0.1"
+                  type="range"
+                  name="volume"
                   value="0.5"
+                  class="controls-volume"
                 />
               </div>
             </div>
@@ -58,85 +58,12 @@
             </div>
           </div>
 
-          <div class="current">
-            <div
-              class="current-image"
-              style="background-image: url('./assets/images/beat1.jpg')"
-            ></div>
-
-            <div class="current-info">
-              <div class="current-info__top">
-                <div class="current-info__titles">
-                  <h2 class="current-info__group">NF</h2>
-                  <h3 class="current-info__track">The search</h3>
-                </div>
-
-                <div class="current-info__year">2023</div>
-              </div>
-
-              <div class="controls">
-                <div class="controls-buttons">
-                  <button class="controls-button controls-prev">
-                    <svg class="icon-arrow">
-                      <use xlink:href="./assets/images/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-
-                  <button class="controls-button controls-play">
-                    <svg class="icon-pause">
-                      <use xlink:href="./assets/images/sprite.svg#pausa"></use>
-                    </svg>
-                    <svg class="icon-play">
-                      <use xlink:href="./assets/images/sprite.svg#play"></use>
-                    </svg>
-                  </button>
-
-                  <button class="controls-button controls-next">
-                    <svg class="icon-arrow">
-                      <use xlink:href="./assets/images/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="controls-progress">
-                  <div class="progress">
-                    <div class="progress-current" style="width: 20%"></div>
-                  </div>
-
-                  <div class="timeline">
-                    <span class="timeline-start">00:00</span>
-                    <span class="timeline-end">00:00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="current"></div>
 
           <div class="list">
             <p class="list-title">All tracks</p>
 
-            <div class="items">
-              <div class="item">
-                <div
-                  class="item-image"
-                  style="background-image: url('./assets/images/beat2.jpg')"
-                ></div>
-
-                <div class="item-titles">
-                  <h2 class="item-group">Rammstein</h2>
-                  <h3 class="item-track">Mein Herz brennth</h3>
-                </div>
-
-                <p class="item-duration">03:45</p>
-                <p class="item-genre">Rock</p>
-
-                <button class="item-play">
-                  <svg class="icon-play">
-                    <use xlink:href="./assets/images/sprite.svg#play"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <div class="items"></div>
           </div>
         </div>
       </main>
